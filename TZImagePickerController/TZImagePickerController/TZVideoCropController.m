@@ -44,7 +44,7 @@
 @property (strong, nonatomic) NSMutableArray *videoImgArray;
 @property (strong, nonatomic) NSArray *imageTimes;
 @property (strong, nonatomic) NSTimer *timer;
-
+@property (nonatomic, strong) UIImageView *rtlImageView;///< for rtl
 @end
 
 @implementation TZVideoCropController
@@ -60,6 +60,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
+    self.rtlImageView = [[UIImageView alloc] init];
+    self.rtlImageView.userInteractionEnabled = YES;
+    [self.view addSubview:self.rtlImageView];
+    self.rtlImageView.frame = self.view.bounds;
     [self configMoviePlayer];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pausePlayer) name:UIApplicationWillResignActiveNotification object:nil];
 }
@@ -86,7 +90,7 @@
             self->_player = [AVPlayer playerWithPlayerItem:playerItem];
             self->_playerLayer = [AVPlayerLayer playerLayerWithPlayer:self->_player];
             self->_playerLayer.frame = self.view.bounds;
-            [self.view.layer addSublayer:self->_playerLayer];
+            [self.rtlImageView.layer addSublayer:self->_playerLayer];
             [self configPlayButton];
             [self configBottomToolBar];
             if (self.imagePickerVc.allowEditVideo) {

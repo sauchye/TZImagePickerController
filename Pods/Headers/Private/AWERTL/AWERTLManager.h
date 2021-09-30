@@ -1,0 +1,1 @@
+../../../AWERTL/AWERTL/Classes/Manager/AWERTLManager.h

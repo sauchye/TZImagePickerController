@@ -24,6 +24,7 @@
     
     UIStatusBarStyle _originStatusBarStyle;
 }
+@property (nonatomic, strong) UIImageView *rtlImageView;///< for rtl
 
 @end
 
@@ -32,6 +33,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
+    self.rtlImageView = [[UIImageView alloc] init];
+    self.rtlImageView.userInteractionEnabled = YES;
+    [self.view addSubview:self.rtlImageView];
+    self.rtlImageView.frame = self.view.bounds;
+
     [self configMoviePlayer];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pausePlayerAndShowNaviBar) name:UIApplicationWillResignActiveNotification object:nil];
 }
@@ -39,7 +45,7 @@
 - (void)configMoviePlayer {
     _player = [AVPlayer playerWithURL:self.videoURL];
     _playerLayer = [AVPlayerLayer playerLayerWithPlayer:_player];
-    [self.view.layer addSublayer:_playerLayer];
+    [self.rtlImageView.layer addSublayer:_playerLayer];
     
     [self configPlayButton];
     [self configBottomToolBar];
@@ -51,7 +57,7 @@
     [_playButton setImage:[UIImage tz_imageNamedFromMyBundle:@"MMVideoPreviewPlay"] forState:UIControlStateNormal];
     [_playButton setImage:[UIImage tz_imageNamedFromMyBundle:@"MMVideoPreviewPlayHL"] forState:UIControlStateHighlighted];
     [_playButton addTarget:self action:@selector(playButtonClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:_playButton];
+    [self.rtlImageView addSubview:_playButton];
 }
 
 - (void)configBottomToolBar {

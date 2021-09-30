@@ -22,7 +22,7 @@
 #import "FLAnimatedImage.h"
 #import "TZImageUploadOperation.h"
 #import "TZVideoEditedPreviewController.h"
-
+#import "AWERTLManager.h"
 @interface ViewController ()<TZImagePickerControllerDelegate,UICollectionViewDataSource,UICollectionViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate> {
     NSMutableArray *_selectedPhotos;
     NSMutableArray *_selectedAssets;
@@ -270,12 +270,21 @@
     [_collectionView reloadData];
 }
 
+#pragma mark - RTL
+- (void)settingEnableRTL:(BOOL)enableRTL {
+    /// RTL
+    [TZImagePickerConfig sharedInstance].enableRTL = enableRTL;
+    [AWERTLManager sharedInstance].enableRTL       = enableRTL;
+}
+
+
 #pragma mark - TZImagePickerController
 
 - (void)pushTZImagePickerController {
     if (self.maxCountTF.text.integerValue <= 0) {
         return;
     }
+    /// test
     // 设置languageBundle以使用其它语言，必须在TZImagePickerController初始化前设置 / Set languageBundle to use other language
     // [TZImagePickerConfig sharedInstance].languageBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"tz-ru" ofType:@"lproj"]];
 
@@ -792,6 +801,8 @@
     if (sender.isOn) {
         [_allowPickingImageSwitch setOn:YES animated:YES];
     }
+    /// setting RTL
+    [self settingEnableRTL:sender.isOn];
 }
 
 - (IBAction)showTakeVideoBtnSwitchClick:(UISwitch *)sender {
@@ -860,7 +871,6 @@
 }
 
 - (IBAction)allowPickingMultipleVideoSwitchClick:(UISwitch *)sender {
- 
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

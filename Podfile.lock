@@ -1,0 +1,20 @@
+PODS:
+  - AWERTL (1.0.0):
+    - RSSwizzle
+  - RSSwizzle (0.1.0)
+
+DEPENDENCIES:
+  - AWERTL
+
+SPEC REPOS:
+  trunk:
+    - AWERTL
+    - RSSwizzle
+
+SPEC CHECKSUMS:
+  AWERTL: 4730c9abe56c4b7b0e1d510dc07e1e41d5221ba3
+  RSSwizzle: d561958f595028bfcef98c7d55c318b3878a61c6
+
+PODFILE CHECKSUM: 17ddc828a4bc39c0ff32683b7f9ac2b4b19fb47a
+
+COCOAPODS: 1.10.1

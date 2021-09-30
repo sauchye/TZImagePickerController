@@ -347,6 +347,7 @@
 
 @interface UIImage (MyBundle)
 + (UIImage *)tz_imageNamedFromMyBundle:(NSString *)name;
++ (UIImage *)tz_flipImage:(UIImage *)image;///<  flip picture eg:RTL
 @end
 
 
@@ -373,6 +374,7 @@
 @property (assign, nonatomic) BOOL showPhotoCannotSelectLayer;
 @property (assign, nonatomic) BOOL notScaleImage;
 @property (assign, nonatomic) BOOL needFixComposition;
+@property (assign, nonatomic) BOOL enableRTL;///< enableRTL
 
 /// 默认是50，如果一个GIF过大，里面图片个数可能超过1000，会导致内存飙升而崩溃
 @property (assign, nonatomic) NSInteger gifPreviewMaxImagesCount;

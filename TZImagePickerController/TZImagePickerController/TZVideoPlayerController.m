@@ -34,6 +34,7 @@
 
 // iCloud无法同步提示UI
 @property (nonatomic, strong) UIView *iCloudErrorView;
+@property (nonatomic, strong) UIImageView *rtlImageView;///< for rtl
 
 @end
 
@@ -44,6 +45,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.rtlImageView = [[UIImageView alloc] init];
+    self.rtlImageView.userInteractionEnabled = YES;
+    self.rtlImageView.frame = self.view.bounds;
+    [self.view addSubview:self.rtlImageView];
+    
     self.needShowStatusBar = ![UIApplication sharedApplication].statusBarHidden;
     self.view.backgroundColor = [UIColor blackColor];
     TZImagePickerController *tzImagePickerVc = (TZImagePickerController *)self.navigationController;
@@ -83,7 +90,7 @@
             self->_player = [AVPlayer playerWithPlayerItem:playerItem];
             self->_playerLayer = [AVPlayerLayer playerLayerWithPlayer:self->_player];
             self->_playerLayer.frame = self.view.bounds;
-            [self.view.layer addSublayer:self->_playerLayer];
+            [self.rtlImageView.layer addSublayer:self->_playerLayer];
             [self addProgressObserver];
             [self configPlayButton];
             [self configBottomToolBar];
@@ -110,7 +117,7 @@
     [_playButton setImage:[UIImage tz_imageNamedFromMyBundle:@"MMVideoPreviewPlay"] forState:UIControlStateNormal];
     [_playButton setImage:[UIImage tz_imageNamedFromMyBundle:@"MMVideoPreviewPlayHL"] forState:UIControlStateHighlighted];
     [_playButton addTarget:self action:@selector(playButtonClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:_playButton];
+    [self.rtlImageView addSubview:_playButton];
 }
 
 - (void)configBottomToolBar {

@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E65BE98AD77BD64F68B738A89BCA893 /* UITextView+AWERTL.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DE9AE89678A64CF76029FB2BE40A88 /* UITextView+AWERTL.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		152CC27676466DB3EF6EFD646F697828 /* AWERTLManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A7BC8E6000FFC8643BC08E13C6D9F735 /* AWERTLManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		15A1E13B76B62E90783E9880391C785F /* NSString+AWERTL.m in Sources */ = {isa = PBXBuildFile; fileRef = BCFBE674F19F7768D5E69A75E52C509D /* NSString+AWERTL.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		296F3FDC32C934B2CA7968E4B0E3DD61 /* UIImage+AWERTL.h in Headers */ = {isa = PBXBuildFile; fileRef = E47DDC4C57F11B9FF974281482CFE287 /* UIImage+AWERTL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3C7FB2557D3C676B39D676558D65F0E9 /* UITextField+AWERTL.m in Sources */ = {isa = PBXBuildFile; fileRef = E38B6815B1E1F910312A3A9FBFD77732 /* UITextField+AWERTL.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		41D0DF1EC8E482C7E151FA0FE989587D /* Masonry+AWERTL.h in Headers */ = {isa = PBXBuildFile; fileRef = 345E021EF8DBCF45700CF8A23F5E88E7 /* Masonry+AWERTL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		469B202155F198A57C7B3525C130F8A1 /* Masonry+AWERTL.m in Sources */ = {isa = PBXBuildFile; fileRef = FB89AADFF5A6711B400A5BBD70E10BB4 /* Masonry+AWERTL.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		595F2B95262DB15356B7606C9CE86A70 /* TTTAttributedLabel+LocalizationsPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C3B948D39C8563BD3B3E2D3962975F /* TTTAttributedLabel+LocalizationsPlus.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5A6FEAFFBD1A85DF0B7FA81D3420527B /* UIWindow+AWERTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4855057DC8CF691A0158106793AC43 /* UIWindow+AWERTL.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6730594B698555CD455327DD49E8F19D /* UILabel+AWERTL.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2B39D3CB9F3461A49BF20123A9FAA5 /* UILabel+AWERTL.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6DA74D5BD2925A593CC0E50657763BFA /* NSObject+AWERTLReloadBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = B09E6EAA112F964665E6B9357A43F90E /* NSObject+AWERTLReloadBlock.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6FC5E3BE113B0FA446FD3017C0B1D338 /* UIImage+AWERTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3A3F5FF1D8417A8514CB98948554ED /* UIImage+AWERTL.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		763E3A6F21194DEB9534A59299710B38 /* YYLabel+AWERTL.h in Headers */ = {isa = PBXBuildFile; fileRef = 296CA09BFEEF5EF45245E0069F068C72 /* YYLabel+AWERTL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		76C086688C5DA65D745BC6D728E03686 /* UIImageView+AWERTL.m in Sources */ = {isa = PBXBuildFile; fileRef = D7877888303183755C888232F7B45D73 /* UIImageView+AWERTL.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7720184A8C3D2807B52D1B4512D2941A /* UILabel+AWERTL.h in Headers */ = {isa = PBXBuildFile; fileRef = E0F2895563E3B23F0BCD06DEB95F079E /* UILabel+AWERTL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		79B9814BA0A94731AFF1EC97B2A84429 /* AWERTLDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FC9BF4F5BFF332AFD23B7D11E075E7A /* AWERTLDefinitions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7E20EDBA0C05CFFE77DE2BDAA16A14CC /* AWERTLWhiteListManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BB44704EE71BEBB5ADB8A7C00F0E0B6 /* AWERTLWhiteListManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7FFF599E5FE9555D8F5D62C3AF3230A6 /* UIView+AWERTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 7239B7FF38A3F04E24E3DCDD85A7A7B3 /* UIView+AWERTL.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8710BF7F82A968827659BE531D130BEE /* NSObject+AWERTLReloadBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF31028F7CC874351DEF18208F6BDB2 /* NSObject+AWERTLReloadBlock.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9510904FECC3BD0B28A2F5EC8C5A938C /* AWERTL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B650C83BD152C081F02585C3922D401 /* AWERTL-dummy.m */; };
+		95E16F64BB55AC18FE33887A3060C6E5 /* Pods-TZImagePickerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA407368E9D8BEB54D20B1E52BF8B9 /* Pods-TZImagePickerController-dummy.m */; };
+		A5AA06C45FC73ABEF811A99E14E59B4E /* AWERTLRemoteViewControllerAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FEA840F1892471EAFD27982FE3673E /* AWERTLRemoteViewControllerAdaptor.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A82183C59317676B76702B9BC32E8B1F /* AWERTLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5D3C2E4B555B6B851A99367E88BCBA /* AWERTLManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AAA2E9A2C1CCEA45B0338AC9C2D0B3D7 /* TTTAttributedLabel+LocalizationsPlus.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C16FE1FBCB48383574315E41A28AA91 /* TTTAttributedLabel+LocalizationsPlus.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AC22C2ED8F3A777BF7E1D1DB49C0387C /* RSSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BAE56C6CD004842A2D45E5F7D20062 /* RSSwizzle.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B1E7316CA7594B224680E4BED083A5CE /* YYLabel+AWERTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 078AF088223FE3CD7F4264559F775B4A /* YYLabel+AWERTL.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CC88430BF17354CA1EA4E67D61920E32 /* RSSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 816B755BE56700A1622EF87F6D430E03 /* RSSwizzle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D79B6C2939A756351DBF9672EDF2569F /* CALayer+AWERTL.h in Headers */ = {isa = PBXBuildFile; fileRef = 0868DA31D596F408B2ACF96A6056091D /* CALayer+AWERTL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E0A66CFA3A8C17ECA7D04C22EE9D6BA5 /* AWERTLWhiteListManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C643EE282AC4DACF1A981374F42F01A /* AWERTLWhiteListManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F02E902A1302B32A96F26B9D4708E62B /* RSSwizzle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 709EF777F0B6F9CE3F6B43B15AD60C4C /* RSSwizzle-dummy.m */; };
+		F19D0D542EA878BAAD0ECAEBB4118E00 /* UIWindow+AWERTL.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E100C2DC5700090CCB07343198B903E /* UIWindow+AWERTL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F632A88678F6B9D6BA5FA5C88888579F /* UITextView+AWERTL.h in Headers */ = {isa = PBXBuildFile; fileRef = 4962E9E302959AFFECBC130CDFEA6ACC /* UITextView+AWERTL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F63457409C55157B11770379488F1EAE /* UIView+AWERTL.h in Headers */ = {isa = PBXBuildFile; fileRef = 412F33CBCDE3909CAFE68A6CF7C4DD44 /* UIView+AWERTL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F87C7CBC549C686E76532781FE6C5EF4 /* UIImageView+AWERTL.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A258DA9CE7ACCFEE7FA7FAF212172D0 /* UIImageView+AWERTL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F91CDAAAC8B04B85D2B46D0D47537BA0 /* NSString+AWERTL.h in Headers */ = {isa = PBXBuildFile; fileRef = E8CE21DFAA8AF2F2F8E7DFB3E218AC76 /* NSString+AWERTL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F9F600C96EAE76F2BB5E306007271FB6 /* UITextField+AWERTL.h in Headers */ = {isa = PBXBuildFile; fileRef = C518A93A46718B4D10E6930F9A0A2541 /* UITextField+AWERTL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FA377CCBBE13972BB93F077DA3BB7108 /* AWERTLRemoteViewControllerAdaptor.h in Headers */ = {isa = PBXBuildFile; fileRef = E3B5D1D5FA2DC64E189123FECBB1F049 /* AWERTLRemoteViewControllerAdaptor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FF4DE2BAAA793A2C2957DAD4C0072D66 /* CALayer+AWERTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F347CE0A6177E2807BDD88ACA006C0 /* CALayer+AWERTL.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A441971758FEA604C8579E944C43153 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B241C476F9EA12826AE963F5FCA98368;
+			remoteInfo = AWERTL;
+		};
+		8DA12E377F7EDF02E708420E67508F8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D8380E6EEBCE39C17D7992C2131202F;
+			remoteInfo = RSSwizzle;
+		};
+		E76FCFFEEE2A947E1B457083FB4A8DA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D8380E6EEBCE39C17D7992C2131202F;
+			remoteInfo = RSSwizzle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		078AF088223FE3CD7F4264559F775B4A /* YYLabel+AWERTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "YYLabel+AWERTL.m"; path = "AWERTL/Classes/UICategories/YYLabel+AWERTL.m"; sourceTree = "<group>"; };
+		0868DA31D596F408B2ACF96A6056091D /* CALayer+AWERTL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+AWERTL.h"; path = "AWERTL/Classes/UICategories/CALayer+AWERTL.h"; sourceTree = "<group>"; };
+		0C643EE282AC4DACF1A981374F42F01A /* AWERTLWhiteListManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWERTLWhiteListManager.m; path = AWERTL/Classes/UICategories/AWERTLWhiteListManager.m; sourceTree = "<group>"; };
+		0DAA7CABE66959C696011F0A352AD5A9 /* RSSwizzle-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSSwizzle-prefix.pch"; sourceTree = "<group>"; };
+		15A72103011790686B8E07F1EC00749D /* libAWERTL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAWERTL.a; path = libAWERTL.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		22FEA840F1892471EAFD27982FE3673E /* AWERTLRemoteViewControllerAdaptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWERTLRemoteViewControllerAdaptor.m; path = AWERTL/Classes/UICategories/AWERTLRemoteViewControllerAdaptor.m; sourceTree = "<group>"; };
+		289955F1DDC31122254C33CE64028F12 /* AWERTL-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWERTL-prefix.pch"; sourceTree = "<group>"; };
+		28F347CE0A6177E2807BDD88ACA006C0 /* CALayer+AWERTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+AWERTL.m"; path = "AWERTL/Classes/UICategories/CALayer+AWERTL.m"; sourceTree = "<group>"; };
+		296CA09BFEEF5EF45245E0069F068C72 /* YYLabel+AWERTL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YYLabel+AWERTL.h"; path = "AWERTL/Classes/UICategories/YYLabel+AWERTL.h"; sourceTree = "<group>"; };
+		2B650C83BD152C081F02585C3922D401 /* AWERTL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AWERTL-dummy.m"; sourceTree = "<group>"; };
+		345E021EF8DBCF45700CF8A23F5E88E7 /* Masonry+AWERTL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Masonry+AWERTL.h"; path = "AWERTL/Classes/UICategories/Masonry+AWERTL.h"; sourceTree = "<group>"; };
+		36BAE56C6CD004842A2D45E5F7D20062 /* RSSwizzle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSSwizzle.m; path = RSSwizzle/RSSwizzle.m; sourceTree = "<group>"; };
+		38C3B948D39C8563BD3B3E2D3962975F /* TTTAttributedLabel+LocalizationsPlus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "TTTAttributedLabel+LocalizationsPlus.m"; path = "AWERTL/Classes/UICategories/TTTAttributedLabel+LocalizationsPlus.m"; sourceTree = "<group>"; };
+		412F33CBCDE3909CAFE68A6CF7C4DD44 /* UIView+AWERTL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+AWERTL.h"; path = "AWERTL/Classes/UICategories/UIView+AWERTL.h"; sourceTree = "<group>"; };
+		4962E9E302959AFFECBC130CDFEA6ACC /* UITextView+AWERTL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+AWERTL.h"; path = "AWERTL/Classes/UICategories/UITextView+AWERTL.h"; sourceTree = "<group>"; };
+		4E100C2DC5700090CCB07343198B903E /* UIWindow+AWERTL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWindow+AWERTL.h"; path = "AWERTL/Classes/UICategories/UIWindow+AWERTL.h"; sourceTree = "<group>"; };
+		5A258DA9CE7ACCFEE7FA7FAF212172D0 /* UIImageView+AWERTL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AWERTL.h"; path = "AWERTL/Classes/UICategories/UIImageView+AWERTL.h"; sourceTree = "<group>"; };
+		5C16FE1FBCB48383574315E41A28AA91 /* TTTAttributedLabel+LocalizationsPlus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TTTAttributedLabel+LocalizationsPlus.h"; path = "AWERTL/Classes/UICategories/TTTAttributedLabel+LocalizationsPlus.h"; sourceTree = "<group>"; };
+		5D3A3F5FF1D8417A8514CB98948554ED /* UIImage+AWERTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+AWERTL.m"; path = "AWERTL/Classes/Utils/UIImage+AWERTL.m"; sourceTree = "<group>"; };
+		5DF31028F7CC874351DEF18208F6BDB2 /* NSObject+AWERTLReloadBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+AWERTLReloadBlock.m"; path = "AWERTL/Classes/Utils/NSObject+AWERTLReloadBlock.m"; sourceTree = "<group>"; };
+		6665B0D0E4B40619B6289D729E6D15BF /* Pods-TZImagePickerController-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TZImagePickerController-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6A13F2A8EA45137FA635A3B0A53BAF37 /* Pods-TZImagePickerController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TZImagePickerController.debug.xcconfig"; sourceTree = "<group>"; };
+		6FA95986B180E1F813F89A86F8DF3BD6 /* libRSSwizzle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRSSwizzle.a; path = libRSSwizzle.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FC9BF4F5BFF332AFD23B7D11E075E7A /* AWERTLDefinitions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWERTLDefinitions.h; path = AWERTL/Classes/Utils/AWERTLDefinitions.h; sourceTree = "<group>"; };
+		709EF777F0B6F9CE3F6B43B15AD60C4C /* RSSwizzle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSSwizzle-dummy.m"; sourceTree = "<group>"; };
+		7239B7FF38A3F04E24E3DCDD85A7A7B3 /* UIView+AWERTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+AWERTL.m"; path = "AWERTL/Classes/UICategories/UIView+AWERTL.m"; sourceTree = "<group>"; };
+		7BB44704EE71BEBB5ADB8A7C00F0E0B6 /* AWERTLWhiteListManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWERTLWhiteListManager.h; path = AWERTL/Classes/UICategories/AWERTLWhiteListManager.h; sourceTree = "<group>"; };
+		7F4855057DC8CF691A0158106793AC43 /* UIWindow+AWERTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+AWERTL.m"; path = "AWERTL/Classes/UICategories/UIWindow+AWERTL.m"; sourceTree = "<group>"; };
+		816B755BE56700A1622EF87F6D430E03 /* RSSwizzle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSSwizzle.h; path = RSSwizzle/RSSwizzle.h; sourceTree = "<group>"; };
+		8D2AF15D74FAEE8A18FBD0AB0AAA42F7 /* Pods-TZImagePickerController-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TZImagePickerController-acknowledgements.plist"; sourceTree = "<group>"; };
+		9700DDEEBB3B56954825AEB13F740AC2 /* AWERTL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AWERTL.release.xcconfig; sourceTree = "<group>"; };
+		9C5D3C2E4B555B6B851A99367E88BCBA /* AWERTLManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWERTLManager.m; path = AWERTL/Classes/Manager/AWERTLManager.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0DE9AE89678A64CF76029FB2BE40A88 /* UITextView+AWERTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+AWERTL.m"; path = "AWERTL/Classes/UICategories/UITextView+AWERTL.m"; sourceTree = "<group>"; };
+		A7BC8E6000FFC8643BC08E13C6D9F735 /* AWERTLManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWERTLManager.h; path = AWERTL/Classes/Manager/AWERTLManager.h; sourceTree = "<group>"; };
+		A88A906098104D92F68230173E1B6F7D /* libPods-TZImagePickerController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TZImagePickerController.a"; path = "libPods-TZImagePickerController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B09E6EAA112F964665E6B9357A43F90E /* NSObject+AWERTLReloadBlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+AWERTLReloadBlock.h"; path = "AWERTL/Classes/Utils/NSObject+AWERTLReloadBlock.h"; sourceTree = "<group>"; };
+		BCFBE674F19F7768D5E69A75E52C509D /* NSString+AWERTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+AWERTL.m"; path = "AWERTL/Classes/Utils/NSString+AWERTL.m"; sourceTree = "<group>"; };
+		C518A93A46718B4D10E6930F9A0A2541 /* UITextField+AWERTL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+AWERTL.h"; path = "AWERTL/Classes/UICategories/UITextField+AWERTL.h"; sourceTree = "<group>"; };
+		CDA8E1DA1B427C636CD9EF18C2469B0E /* RSSwizzle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSSwizzle.release.xcconfig; sourceTree = "<group>"; };
+		D2B6F2EDFBFC3A7561AC5094EF0DD3FE /* RSSwizzle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSSwizzle.debug.xcconfig; sourceTree = "<group>"; };
+		D7877888303183755C888232F7B45D73 /* UIImageView+AWERTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AWERTL.m"; path = "AWERTL/Classes/UICategories/UIImageView+AWERTL.m"; sourceTree = "<group>"; };
+		D8AA407368E9D8BEB54D20B1E52BF8B9 /* Pods-TZImagePickerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TZImagePickerController-dummy.m"; sourceTree = "<group>"; };
+		E0F2895563E3B23F0BCD06DEB95F079E /* UILabel+AWERTL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+AWERTL.h"; path = "AWERTL/Classes/UICategories/UILabel+AWERTL.h"; sourceTree = "<group>"; };
+		E101A1435031B07967DAFA4F83D87CE5 /* Pods-TZImagePickerController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TZImagePickerController.release.xcconfig"; sourceTree = "<group>"; };
+		E38B6815B1E1F910312A3A9FBFD77732 /* UITextField+AWERTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+AWERTL.m"; path = "AWERTL/Classes/UICategories/UITextField+AWERTL.m"; sourceTree = "<group>"; };
+		E3B5D1D5FA2DC64E189123FECBB1F049 /* AWERTLRemoteViewControllerAdaptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWERTLRemoteViewControllerAdaptor.h; path = AWERTL/Classes/UICategories/AWERTLRemoteViewControllerAdaptor.h; sourceTree = "<group>"; };
+		E47DDC4C57F11B9FF974281482CFE287 /* UIImage+AWERTL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AWERTL.h"; path = "AWERTL/Classes/Utils/UIImage+AWERTL.h"; sourceTree = "<group>"; };
+		E8CE21DFAA8AF2F2F8E7DFB3E218AC76 /* NSString+AWERTL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+AWERTL.h"; path = "AWERTL/Classes/Utils/NSString+AWERTL.h"; sourceTree = "<group>"; };
+		EA2B39D3CB9F3461A49BF20123A9FAA5 /* UILabel+AWERTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+AWERTL.m"; path = "AWERTL/Classes/UICategories/UILabel+AWERTL.m"; sourceTree = "<group>"; };
+		FB89AADFF5A6711B400A5BBD70E10BB4 /* Masonry+AWERTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Masonry+AWERTL.m"; path = "AWERTL/Classes/UICategories/Masonry+AWERTL.m"; sourceTree = "<group>"; };
+		FC8C37DB7A9E6DA8A709B2B31DC7679E /* AWERTL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AWERTL.debug.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DBA117930B83E4081A1A82F8D576ACE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9945AAD32608ADD6367F1C1A6DB207E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3BAE903DC403E764F898950D68BE665 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16A1650BC8A31086CC9415AE61AA5AD1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				709EF777F0B6F9CE3F6B43B15AD60C4C /* RSSwizzle-dummy.m */,
+				0DAA7CABE66959C696011F0A352AD5A9 /* RSSwizzle-prefix.pch */,
+				D2B6F2EDFBFC3A7561AC5094EF0DD3FE /* RSSwizzle.debug.xcconfig */,
+				CDA8E1DA1B427C636CD9EF18C2469B0E /* RSSwizzle.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RSSwizzle";
+			sourceTree = "<group>";
+		};
+		252F379D3AF4665A72980B716AB620A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				784D42168AA4FE6328B79F86E09D2178 /* AWERTL */,
+				E02E0D3D00CDCD0C6250F3415D401BF3 /* RSSwizzle */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2E7BE5F020D450A2ACFC6CC0F26CEAE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15A72103011790686B8E07F1EC00749D /* libAWERTL.a */,
+				A88A906098104D92F68230173E1B6F7D /* libPods-TZImagePickerController.a */,
+				6FA95986B180E1F813F89A86F8DF3BD6 /* libRSSwizzle.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		655F3F12DD0A6E9317313B041F32267E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8052D32102F670E9BBACEF4568CCCE0 /* Pods-TZImagePickerController */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		784D42168AA4FE6328B79F86E09D2178 /* AWERTL */ = {
+			isa = PBXGroup;
+			children = (
+				6FC9BF4F5BFF332AFD23B7D11E075E7A /* AWERTLDefinitions.h */,
+				A7BC8E6000FFC8643BC08E13C6D9F735 /* AWERTLManager.h */,
+				9C5D3C2E4B555B6B851A99367E88BCBA /* AWERTLManager.m */,
+				E3B5D1D5FA2DC64E189123FECBB1F049 /* AWERTLRemoteViewControllerAdaptor.h */,
+				22FEA840F1892471EAFD27982FE3673E /* AWERTLRemoteViewControllerAdaptor.m */,
+				7BB44704EE71BEBB5ADB8A7C00F0E0B6 /* AWERTLWhiteListManager.h */,
+				0C643EE282AC4DACF1A981374F42F01A /* AWERTLWhiteListManager.m */,
+				0868DA31D596F408B2ACF96A6056091D /* CALayer+AWERTL.h */,
+				28F347CE0A6177E2807BDD88ACA006C0 /* CALayer+AWERTL.m */,
+				345E021EF8DBCF45700CF8A23F5E88E7 /* Masonry+AWERTL.h */,
+				FB89AADFF5A6711B400A5BBD70E10BB4 /* Masonry+AWERTL.m */,
+				B09E6EAA112F964665E6B9357A43F90E /* NSObject+AWERTLReloadBlock.h */,
+				5DF31028F7CC874351DEF18208F6BDB2 /* NSObject+AWERTLReloadBlock.m */,
+				E8CE21DFAA8AF2F2F8E7DFB3E218AC76 /* NSString+AWERTL.h */,
+				BCFBE674F19F7768D5E69A75E52C509D /* NSString+AWERTL.m */,
+				5C16FE1FBCB48383574315E41A28AA91 /* TTTAttributedLabel+LocalizationsPlus.h */,
+				38C3B948D39C8563BD3B3E2D3962975F /* TTTAttributedLabel+LocalizationsPlus.m */,
+				E47DDC4C57F11B9FF974281482CFE287 /* UIImage+AWERTL.h */,
+				5D3A3F5FF1D8417A8514CB98948554ED /* UIImage+AWERTL.m */,
+				5A258DA9CE7ACCFEE7FA7FAF212172D0 /* UIImageView+AWERTL.h */,
+				D7877888303183755C888232F7B45D73 /* UIImageView+AWERTL.m */,
+				E0F2895563E3B23F0BCD06DEB95F079E /* UILabel+AWERTL.h */,
+				EA2B39D3CB9F3461A49BF20123A9FAA5 /* UILabel+AWERTL.m */,
+				C518A93A46718B4D10E6930F9A0A2541 /* UITextField+AWERTL.h */,
+				E38B6815B1E1F910312A3A9FBFD77732 /* UITextField+AWERTL.m */,
+				4962E9E302959AFFECBC130CDFEA6ACC /* UITextView+AWERTL.h */,
+				A0DE9AE89678A64CF76029FB2BE40A88 /* UITextView+AWERTL.m */,
+				412F33CBCDE3909CAFE68A6CF7C4DD44 /* UIView+AWERTL.h */,
+				7239B7FF38A3F04E24E3DCDD85A7A7B3 /* UIView+AWERTL.m */,
+				4E100C2DC5700090CCB07343198B903E /* UIWindow+AWERTL.h */,
+				7F4855057DC8CF691A0158106793AC43 /* UIWindow+AWERTL.m */,
+				296CA09BFEEF5EF45245E0069F068C72 /* YYLabel+AWERTL.h */,
+				078AF088223FE3CD7F4264559F775B4A /* YYLabel+AWERTL.m */,
+				FDEDFD876E804B480CF0327F175E30ED /* Support Files */,
+			);
+			name = AWERTL;
+			path = AWERTL;
+			sourceTree = "<group>";
+		};
+		A8052D32102F670E9BBACEF4568CCCE0 /* Pods-TZImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				6665B0D0E4B40619B6289D729E6D15BF /* Pods-TZImagePickerController-acknowledgements.markdown */,
+				8D2AF15D74FAEE8A18FBD0AB0AAA42F7 /* Pods-TZImagePickerController-acknowledgements.plist */,
+				D8AA407368E9D8BEB54D20B1E52BF8B9 /* Pods-TZImagePickerController-dummy.m */,
+				6A13F2A8EA45137FA635A3B0A53BAF37 /* Pods-TZImagePickerController.debug.xcconfig */,
+				E101A1435031B07967DAFA4F83D87CE5 /* Pods-TZImagePickerController.release.xcconfig */,
+			);
+			name = "Pods-TZImagePickerController";
+			path = "Target Support Files/Pods-TZImagePickerController";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				252F379D3AF4665A72980B716AB620A5 /* Pods */,
+				2E7BE5F020D450A2ACFC6CC0F26CEAE0 /* Products */,
+				655F3F12DD0A6E9317313B041F32267E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E02E0D3D00CDCD0C6250F3415D401BF3 /* RSSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				816B755BE56700A1622EF87F6D430E03 /* RSSwizzle.h */,
+				36BAE56C6CD004842A2D45E5F7D20062 /* RSSwizzle.m */,
+				16A1650BC8A31086CC9415AE61AA5AD1 /* Support Files */,
+			);
+			name = RSSwizzle;
+			path = RSSwizzle;
+			sourceTree = "<group>";
+		};
+		FDEDFD876E804B480CF0327F175E30ED /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B650C83BD152C081F02585C3922D401 /* AWERTL-dummy.m */,
+				289955F1DDC31122254C33CE64028F12 /* AWERTL-prefix.pch */,
+				FC8C37DB7A9E6DA8A709B2B31DC7679E /* AWERTL.debug.xcconfig */,
+				9700DDEEBB3B56954825AEB13F740AC2 /* AWERTL.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AWERTL";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		725F45CDA794AED6568F5E66590519C9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC88430BF17354CA1EA4E67D61920E32 /* RSSwizzle.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D285985F371FE96E8F150C74F4C7DB60 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79B9814BA0A94731AFF1EC97B2A84429 /* AWERTLDefinitions.h in Headers */,
+				152CC27676466DB3EF6EFD646F697828 /* AWERTLManager.h in Headers */,
+				FA377CCBBE13972BB93F077DA3BB7108 /* AWERTLRemoteViewControllerAdaptor.h in Headers */,
+				7E20EDBA0C05CFFE77DE2BDAA16A14CC /* AWERTLWhiteListManager.h in Headers */,
+				D79B6C2939A756351DBF9672EDF2569F /* CALayer+AWERTL.h in Headers */,
+				41D0DF1EC8E482C7E151FA0FE989587D /* Masonry+AWERTL.h in Headers */,
+				6DA74D5BD2925A593CC0E50657763BFA /* NSObject+AWERTLReloadBlock.h in Headers */,
+				F91CDAAAC8B04B85D2B46D0D47537BA0 /* NSString+AWERTL.h in Headers */,
+				AAA2E9A2C1CCEA45B0338AC9C2D0B3D7 /* TTTAttributedLabel+LocalizationsPlus.h in Headers */,
+				296F3FDC32C934B2CA7968E4B0E3DD61 /* UIImage+AWERTL.h in Headers */,
+				F87C7CBC549C686E76532781FE6C5EF4 /* UIImageView+AWERTL.h in Headers */,
+				7720184A8C3D2807B52D1B4512D2941A /* UILabel+AWERTL.h in Headers */,
+				F9F600C96EAE76F2BB5E306007271FB6 /* UITextField+AWERTL.h in Headers */,
+				F632A88678F6B9D6BA5FA5C88888579F /* UITextView+AWERTL.h in Headers */,
+				F63457409C55157B11770379488F1EAE /* UIView+AWERTL.h in Headers */,
+				F19D0D542EA878BAAD0ECAEBB4118E00 /* UIWindow+AWERTL.h in Headers */,
+				763E3A6F21194DEB9534A59299710B38 /* YYLabel+AWERTL.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E32483D5E9972C300741510CF3A72795 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1D8380E6EEBCE39C17D7992C2131202F /* RSSwizzle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70E2ED9EBD3D4EC99002D69A89655A45 /* Build configuration list for PBXNativeTarget "RSSwizzle" */;
+			buildPhases = (
+				725F45CDA794AED6568F5E66590519C9 /* Headers */,
+				7C07AC035A20FA065A708B5AE9D3BCA5 /* Sources */,
+				C3BAE903DC403E764F898950D68BE665 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSSwizzle;
+			productName = RSSwizzle;
+			productReference = 6FA95986B180E1F813F89A86F8DF3BD6 /* libRSSwizzle.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		71AB562CF4B8C571B324EE927A486913 /* Pods-TZImagePickerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBD3E3DAC6FDA4047E9CED669E7784A4 /* Build configuration list for PBXNativeTarget "Pods-TZImagePickerController" */;
+			buildPhases = (
+				E32483D5E9972C300741510CF3A72795 /* Headers */,
+				ABAAD9A86E50C193F7C28E7834C84358 /* Sources */,
+				4DBA117930B83E4081A1A82F8D576ACE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E9E46648DCC27BD907FD97E932CA09F /* PBXTargetDependency */,
+				318B9C11B21F694877613B35875C9E82 /* PBXTargetDependency */,
+			);
+			name = "Pods-TZImagePickerController";
+			productName = "Pods-TZImagePickerController";
+			productReference = A88A906098104D92F68230173E1B6F7D /* libPods-TZImagePickerController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B241C476F9EA12826AE963F5FCA98368 /* AWERTL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48B3158BA6D550D0B43E5B217CDF7CA6 /* Build configuration list for PBXNativeTarget "AWERTL" */;
+			buildPhases = (
+				D285985F371FE96E8F150C74F4C7DB60 /* Headers */,
+				D2816A6A24DE5AEE5EA18607B2DF6612 /* Sources */,
+				9945AAD32608ADD6367F1C1A6DB207E6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07253819C0C70B5144804DD4B2177CF5 /* PBXTargetDependency */,
+			);
+			name = AWERTL;
+			productName = AWERTL;
+			productReference = 15A72103011790686B8E07F1EC00749D /* libAWERTL.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 2E7BE5F020D450A2ACFC6CC0F26CEAE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B241C476F9EA12826AE963F5FCA98368 /* AWERTL */,
+				71AB562CF4B8C571B324EE927A486913 /* Pods-TZImagePickerController */,
+				1D8380E6EEBCE39C17D7992C2131202F /* RSSwizzle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C07AC035A20FA065A708B5AE9D3BCA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F02E902A1302B32A96F26B9D4708E62B /* RSSwizzle-dummy.m in Sources */,
+				AC22C2ED8F3A777BF7E1D1DB49C0387C /* RSSwizzle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABAAD9A86E50C193F7C28E7834C84358 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E16F64BB55AC18FE33887A3060C6E5 /* Pods-TZImagePickerController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2816A6A24DE5AEE5EA18607B2DF6612 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9510904FECC3BD0B28A2F5EC8C5A938C /* AWERTL-dummy.m in Sources */,
+				A82183C59317676B76702B9BC32E8B1F /* AWERTLManager.m in Sources */,
+				A5AA06C45FC73ABEF811A99E14E59B4E /* AWERTLRemoteViewControllerAdaptor.m in Sources */,
+				E0A66CFA3A8C17ECA7D04C22EE9D6BA5 /* AWERTLWhiteListManager.m in Sources */,
+				FF4DE2BAAA793A2C2957DAD4C0072D66 /* CALayer+AWERTL.m in Sources */,
+				469B202155F198A57C7B3525C130F8A1 /* Masonry+AWERTL.m in Sources */,
+				8710BF7F82A968827659BE531D130BEE /* NSObject+AWERTLReloadBlock.m in Sources */,
+				15A1E13B76B62E90783E9880391C785F /* NSString+AWERTL.m in Sources */,
+				595F2B95262DB15356B7606C9CE86A70 /* TTTAttributedLabel+LocalizationsPlus.m in Sources */,
+				6FC5E3BE113B0FA446FD3017C0B1D338 /* UIImage+AWERTL.m in Sources */,
+				76C086688C5DA65D745BC6D728E03686 /* UIImageView+AWERTL.m in Sources */,
+				6730594B698555CD455327DD49E8F19D /* UILabel+AWERTL.m in Sources */,
+				3C7FB2557D3C676B39D676558D65F0E9 /* UITextField+AWERTL.m in Sources */,
+				0E65BE98AD77BD64F68B738A89BCA893 /* UITextView+AWERTL.m in Sources */,
+				7FFF599E5FE9555D8F5D62C3AF3230A6 /* UIView+AWERTL.m in Sources */,
+				5A6FEAFFBD1A85DF0B7FA81D3420527B /* UIWindow+AWERTL.m in Sources */,
+				B1E7316CA7594B224680E4BED083A5CE /* YYLabel+AWERTL.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07253819C0C70B5144804DD4B2177CF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSSwizzle;
+			target = 1D8380E6EEBCE39C17D7992C2131202F /* RSSwizzle */;
+			targetProxy = 8DA12E377F7EDF02E708420E67508F8E /* PBXContainerItemProxy */;
+		};
+		318B9C11B21F694877613B35875C9E82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSSwizzle;
+			target = 1D8380E6EEBCE39C17D7992C2131202F /* RSSwizzle */;
+			targetProxy = E76FCFFEEE2A947E1B457083FB4A8DA4 /* PBXContainerItemProxy */;
+		};
+		8E9E46648DCC27BD907FD97E932CA09F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AWERTL;
+			target = B241C476F9EA12826AE963F5FCA98368 /* AWERTL */;
+			targetProxy = 5A441971758FEA604C8579E944C43153 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1ADB3CC6EB1C3296EA993DFA162FDA08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2B6F2EDFBFC3A7561AC5094EF0DD3FE /* RSSwizzle.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/RSSwizzle/RSSwizzle-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = RSSwizzle;
+				PRODUCT_NAME = RSSwizzle;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		216F0BCD574ACFC4BCFC91952E84B0EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9700DDEEBB3B56954825AEB13F740AC2 /* AWERTL.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/AWERTL/AWERTL-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = AWERTL;
+				PRODUCT_NAME = AWERTL;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		37E3C6AA14044571425DD77F6EBD4BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A13F2A8EA45137FA635A3B0A53BAF37 /* Pods-TZImagePickerController.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4454394E5A8D707D8D76C93FF2708EC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC8C37DB7A9E6DA8A709B2B31DC7679E /* AWERTL.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/AWERTL/AWERTL-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = AWERTL;
+				PRODUCT_NAME = AWERTL;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6EC5E49FD8590CFED49D5092FCBBBB2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E101A1435031B07967DAFA4F83D87CE5 /* Pods-TZImagePickerController.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8A51E16DA8414B87E36EFEF2BEFB07FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDA8E1DA1B427C636CD9EF18C2469B0E /* RSSwizzle.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/RSSwizzle/RSSwizzle-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = RSSwizzle;
+				PRODUCT_NAME = RSSwizzle;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48B3158BA6D550D0B43E5B217CDF7CA6 /* Build configuration list for PBXNativeTarget "AWERTL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4454394E5A8D707D8D76C93FF2708EC6 /* Debug */,
+				216F0BCD574ACFC4BCFC91952E84B0EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70E2ED9EBD3D4EC99002D69A89655A45 /* Build configuration list for PBXNativeTarget "RSSwizzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ADB3CC6EB1C3296EA993DFA162FDA08 /* Debug */,
+				8A51E16DA8414B87E36EFEF2BEFB07FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBD3E3DAC6FDA4047E9CED669E7784A4 /* Build configuration list for PBXNativeTarget "Pods-TZImagePickerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37E3C6AA14044571425DD77F6EBD4BD5 /* Debug */,
+				6EC5E49FD8590CFED49D5092FCBBBB2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

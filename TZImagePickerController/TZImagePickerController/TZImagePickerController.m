@@ -913,11 +913,26 @@
     UIImage *image = [UIImage imageWithContentsOfFile:imagePath];
     if (!image) {
         // 兼容业务方自己设置图片的方式
-        name = [name stringByReplacingOccurrencesOfString:@"@2x" withString:@""];
+        name  = [name stringByReplacingOccurrencesOfString:@"@2x" withString:@""];
         image = [UIImage imageNamed:name];
+        if ([name containsString:@"back"]) {
+            image = [self tz_flipImage:image];
+        }
     }
     return image;
 }
+
++ (UIImage *)tz_flipImage:(UIImage *)image {
+    BOOL enableRTL = [TZImagePickerConfig sharedInstance].enableRTL;
+    if (enableRTL) {
+        return [UIImage imageWithCGImage:image.CGImage
+                                   scale:image.scale
+                             orientation:UIImageOrientationUpMirrored];
+    }
+    return image;
+}
+
+
 
 @end
 
