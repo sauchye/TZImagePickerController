@@ -23,6 +23,7 @@
     UIView *_naviBar;
     UIButton *_backButton;
     UIButton *_selectButton;
+    UIImageView *_selectImageView;
     UILabel *_indexLabel;
     
     UIView *_toolBar;
@@ -110,6 +111,9 @@
     [_backButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_backButton addTarget:self action:@selector(backButtonClick) forControlEvents:UIControlEventTouchUpInside];
     
+    _selectImageView = [[UIImageView alloc] init];
+    _selectImageView.userInteractionEnabled = YES;
+    
     _selectButton = [[UIButton alloc] initWithFrame:CGRectZero];
     [_selectButton setImage:tzImagePickerVc.photoDefImage forState:UIControlStateNormal];
     [_selectButton setImage:tzImagePickerVc.photoSelImage forState:UIControlStateSelected];
@@ -125,8 +129,9 @@
     _indexLabel.textColor = [UIColor whiteColor];
     _indexLabel.textAlignment = NSTextAlignmentCenter;
     
-    [_naviBar addSubview:_selectButton];
-    [_naviBar addSubview:_indexLabel];
+    [_naviBar addSubview:_selectImageView];
+    [_selectImageView addSubview:_selectButton];
+    [_selectImageView addSubview:_indexLabel];
     [_naviBar addSubview:_backButton];
     [self.view addSubview:_naviBar];
 }
@@ -264,10 +269,11 @@
     CGFloat statusBarHeight = isFullScreen ? [TZCommonTools tz_statusBarHeight] : 0;
     CGFloat statusBarHeightInterval = isFullScreen ? (statusBarHeight - 20) : 0;
     CGFloat naviBarHeight = statusBarHeight + _tzImagePickerVc.navigationBar.tz_height;
-    _naviBar.frame = CGRectMake(0, 0, self.view.tz_width, naviBarHeight);
+    _naviBar.frame    = CGRectMake(0, 0, self.view.tz_width, naviBarHeight);
     _backButton.frame = CGRectMake(10, 10 + statusBarHeightInterval, 44, 44);
-    _selectButton.frame = CGRectMake(self.view.tz_width - 56, 10 + statusBarHeightInterval, 44, 44);
-    _indexLabel.frame = _selectButton.frame;
+    _selectImageView.frame = CGRectMake(self.view.tz_width - 56, 10 + statusBarHeightInterval, 44, 44);
+    _selectButton.frame    = _selectImageView.bounds;
+    _indexLabel.frame      = _selectButton.frame;
     
     _layout.itemSize = CGSizeMake(self.view.tz_width + 20, self.view.tz_height);
     _layout.minimumInteritemSpacing = 0;

@@ -915,9 +915,9 @@
         // 兼容业务方自己设置图片的方式
         name  = [name stringByReplacingOccurrencesOfString:@"@2x" withString:@""];
         image = [UIImage imageNamed:name];
-        if ([name containsString:@"back"]) {
-            image = [self tz_flipImage:image];
-        }
+    }
+    if ([name containsString:@"back"]) {
+        image = [self tz_flipImage:image];
     }
     return image;
 }

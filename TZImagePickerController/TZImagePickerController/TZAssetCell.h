@@ -19,6 +19,7 @@ typedef enum : NSUInteger {
 
 @class TZAssetModel;
 @interface TZAssetCell : UICollectionViewCell
+@property (weak, nonatomic) UIView   *selectPhotoView;///< top layer click
 @property (weak, nonatomic) UIButton *selectPhotoButton;
 @property (weak, nonatomic) UIButton *cannotSelectLayerButton;
 @property (nonatomic, strong) TZAssetModel *model;

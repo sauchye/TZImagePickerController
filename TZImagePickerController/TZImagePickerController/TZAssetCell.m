@@ -19,6 +19,7 @@
 @property (weak, nonatomic) UILabel *indexLabel;
 @property (weak, nonatomic) UIView *bottomView;
 @property (weak, nonatomic) UILabel *timeLength;
+@property (weak, nonatomic) UIImageView *rtlImageView;
 @property (strong, nonatomic) UITapGestureRecognizer *tapGesture;
 
 @property (nonatomic, weak) UIImageView *videoImgView;
@@ -84,7 +85,7 @@
 - (void)setIndex:(NSInteger)index {
     _index = index;
     self.indexLabel.text = [NSString stringWithFormat:@"%zd", index];
-    [self.contentView bringSubviewToFront:self.indexLabel];
+    //[self.contentView bringSubviewToFront:self.indexLabel];
 }
 
 - (void)setShowSelectBtn:(BOOL)showSelectBtn {
@@ -246,11 +247,21 @@
 
 #pragma mark - Lazy load
 
+- (UIView *)selectPhotoView{
+    if (_selectPhotoView == nil) {
+        UIView *view = [[UIView alloc] init];
+        view.backgroundColor = UIColor.clearColor;
+        [self.contentView addSubview:view];
+        _selectPhotoView = view;
+    }
+    return _selectPhotoView;
+}
+
 - (UIButton *)selectPhotoButton {
     if (_selectPhotoButton == nil) {
         UIButton *selectPhotoButton = [[UIButton alloc] init];
         [selectPhotoButton addTarget:self action:@selector(selectPhotoButtonClick:) forControlEvents:UIControlEventTouchUpInside];
-        [self.contentView addSubview:selectPhotoButton];
+        [self.selectPhotoView addSubview:selectPhotoButton];
         _selectPhotoButton = selectPhotoButton;
     }
     return _selectPhotoButton;
@@ -263,7 +274,6 @@
         imageView.clipsToBounds = YES;
         [self.contentView addSubview:imageView];
         _imageView = imageView;
-        
         _tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTapImageView)];
         [_imageView addGestureRecognizer:_tapGesture];
         self.allowPreview = self.allowPreview;
@@ -271,12 +281,22 @@
     return _imageView;
 }
 
+- (UIImageView *)rtlImageView{
+    if (_rtlImageView == nil) {
+        UIImageView *imageView = [[UIImageView alloc] init];
+        imageView.userInteractionEnabled = YES;
+        [self.contentView addSubview:imageView];
+        _rtlImageView = imageView;
+    }
+    return _rtlImageView;
+}
+
 - (UIImageView *)selectImageView {
     if (_selectImageView == nil) {
         UIImageView *selectImageView = [[UIImageView alloc] init];
         selectImageView.contentMode = UIViewContentModeCenter;
         selectImageView.clipsToBounds = YES;
-        [self.contentView addSubview:selectImageView];
+        [self.rtlImageView addSubview:selectImageView];
         _selectImageView = selectImageView;
     }
     return _selectImageView;
@@ -332,7 +352,7 @@
         indexLabel.adjustsFontSizeToFitWidth = YES;
         indexLabel.textColor = [UIColor whiteColor];
         indexLabel.textAlignment = NSTextAlignmentCenter;
-        [self.contentView addSubview:indexLabel];
+        [self.rtlImageView addSubview:indexLabel];
         _indexLabel = indexLabel;
     }
     return _indexLabel;
@@ -350,20 +370,23 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     _cannotSelectLayerButton.frame = self.bounds;
+    _imageView.frame         = self.bounds;
+    _rtlImageView.frame      = CGRectMake(self.tz_width - 27, 3, 24, 24);
+    _selectImageView.frame   = _rtlImageView.bounds;
+    _indexLabel.frame        = _selectImageView.frame;
+    
     if (self.allowPreview) {
-        _selectPhotoButton.frame = CGRectMake(self.tz_width - 44, 0, 44, 44);
+        _selectPhotoView.frame = CGRectMake(self.tz_width - 44, 0, 44, 44);
     } else {
-        _selectPhotoButton.frame = self.bounds;
+        _selectPhotoView.frame = self.bounds;
     }
-    _selectImageView.frame = CGRectMake(self.tz_width - 27, 3, 24, 24);
+    _selectPhotoButton.frame   = _selectPhotoView.bounds;
     if (_selectImageView.image.size.width <= 27) {
         _selectImageView.contentMode = UIViewContentModeCenter;
     } else {
         _selectImageView.contentMode = UIViewContentModeScaleAspectFit;
     }
-    _indexLabel.frame = _selectImageView.frame;
-    _imageView.frame = self.bounds;
-
+    
     static CGFloat progressWH = 20;
     CGFloat progressXY = (self.tz_width - progressWH) / 2;
     _progressView.frame = CGRectMake(progressXY, progressXY, progressWH, progressWH);
@@ -377,10 +400,12 @@
     
     [self.contentView bringSubviewToFront:_bottomView];
     [self.contentView bringSubviewToFront:_cannotSelectLayerButton];
-    [self.contentView bringSubviewToFront:_selectPhotoButton];
-    [self.contentView bringSubviewToFront:_selectImageView];
     [self.contentView bringSubviewToFront:_indexLabel];
+    [self.contentView bringSubviewToFront:_rtlImageView];
+    [self.contentView bringSubviewToFront:_selectPhotoView];
     
+    //[self.rtlImageView bringSubviewToFront:_indexLabel];
+
     if (self.assetCellDidLayoutSubviewsBlock) {
         self.assetCellDidLayoutSubviewsBlock(self, _imageView, _selectImageView, _indexLabel, _bottomView, _timeLength, _videoImgView);
     }
