@@ -658,7 +658,8 @@
 }
 
 - (NSInteger)currentIndex {
-    return [TZCommonTools tz_isRightToLeftLayout] ? self.models.count - _currentIndex - 1 : _currentIndex;
+    return _currentIndex;
+    ////return [TZCommonTools tz_isRightToLeftLayout] ? self.models.count - _currentIndex - 1 : _currentIndex;
 }
 
 /// 选中/取消选中某张照片

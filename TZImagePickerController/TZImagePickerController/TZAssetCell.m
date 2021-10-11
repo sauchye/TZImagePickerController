@@ -20,6 +20,7 @@
 @property (weak, nonatomic) UIView *bottomView;
 @property (weak, nonatomic) UILabel *timeLength;
 @property (weak, nonatomic) UIImageView *rtlImageView;
+@property (weak, nonatomic) UIView   *selectPhotoView;///< top layer click
 @property (strong, nonatomic) UITapGestureRecognizer *tapGesture;
 
 @property (nonatomic, weak) UIImageView *videoImgView;
@@ -400,7 +401,6 @@
     
     [self.contentView bringSubviewToFront:_bottomView];
     [self.contentView bringSubviewToFront:_cannotSelectLayerButton];
-    [self.contentView bringSubviewToFront:_indexLabel];
     [self.contentView bringSubviewToFront:_rtlImageView];
     [self.contentView bringSubviewToFront:_selectPhotoView];
     
