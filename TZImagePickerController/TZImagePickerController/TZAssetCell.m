@@ -543,3 +543,24 @@
 }
 
 @end
+
+
+@interface TZCollectionViewFlowLayout ()
+
+@end
+
+@implementation TZCollectionViewFlowLayout
+
+- (UIUserInterfaceLayoutDirection)effectiveUserInterfaceLayoutDirection {
+
+    if ([TZImagePickerConfig sharedInstance].enableRTL) {
+        return UIUserInterfaceLayoutDirectionRightToLeft;
+    }
+    return UIUserInterfaceLayoutDirectionLeftToRight;
+}
+
+- (BOOL)flipsHorizontallyInOppositeLayoutDirection {
+    return [TZImagePickerConfig sharedInstance].enableRTL;
+}
+
+@end

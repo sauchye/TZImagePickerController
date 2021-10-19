@@ -423,6 +423,7 @@ static CGFloat itemMargin = 5;
 }
 - (void)previewButtonClick {
     TZPhotoPreviewController *photoPreviewVc = [[TZPhotoPreviewController alloc] init];
+    photoPreviewVc.tz_collectionViewFlowLayout = [[TZCollectionViewFlowLayout alloc] init];
     [self pushPhotoPrevireViewController:photoPreviewVc needCheckSelectedModels:YES];
 }
 
@@ -699,6 +700,7 @@ static CGFloat itemMargin = 5;
         TZPhotoPreviewController *photoPreviewVc = [[TZPhotoPreviewController alloc] init];
         photoPreviewVc.currentIndex = index;
         photoPreviewVc.models = _models;
+        photoPreviewVc.tz_collectionViewFlowLayout = [[TZCollectionViewFlowLayout alloc] init];
         [self pushPhotoPrevireViewController:photoPreviewVc];
     }
 }
@@ -957,6 +959,7 @@ static CGFloat itemMargin = 5;
     if (tzImagePickerVc.maxImagesCount <= 1) {
         if (tzImagePickerVc.allowCrop && asset.mediaType == PHAssetMediaTypeImage) {
             TZPhotoPreviewController *photoPreviewVc = [[TZPhotoPreviewController alloc] init];
+            photoPreviewVc.tz_collectionViewFlowLayout = [[TZCollectionViewFlowLayout alloc] init];
             if (tzImagePickerVc.sortAscendingByModificationDate) {
                 photoPreviewVc.currentIndex = _models.count - 1;
             } else {
